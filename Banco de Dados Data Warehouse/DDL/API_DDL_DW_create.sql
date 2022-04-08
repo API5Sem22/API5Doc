@@ -1,51 +1,52 @@
 CREATE TABLE Dim_Cidade (
     cid_id int IDENTITY(1, 1),
-    cid_nome varchar(50)  NOT NULL,
-    cid_estado varchar(2)  NOT NULL,
-    cid_regiao varchar(10)  NOT NULL,
+    cid_nome varchar(50)  NULL,
+    cid_estado varchar(2)  NULL,
+    cid_regiao varchar(10)  NULL,
     CONSTRAINT pk_cidade PRIMARY KEY  (cid_id)
 );
 
 CREATE TABLE Dim_Cnae (
-    cne_id int  IDENTITY(1, 1),
-    cne_cod varchar(10)  NOT NULL,
-    cne_descricao varchar(150)  NOT NULL,
+    cne_id int IDENTITY(1, 1),
+    cne_cod varchar(10)  NULL,
+    cne_descricao varchar(150)  NULL,
     CONSTRAINT pk_cnae PRIMARY KEY  (cne_id)
 );
 
 CREATE TABLE Dim_Empresa (
-    emp_cnpj varchar(30)  NOT NULL,
-    emp_origem varchar(15)  NOT NULL,
-    emp_nome varchar(100)  NOT NULL,
-    emp_porte varchar(10)  NOT NULL,
-    emp_tipo varchar(10)  NOT NULL,
-    emp_situacao varchar(10)  NOT NULL,
-    emp_data_abertura varchar(10)  NOT NULL,
-    emp_email varchar(80)  NOT NULL,
-    emp_telefone varchar(20)  NOT NULL,
+    emp_cnpj varchar(30),
+    emp_origem varchar(15)  NULL,
+    emp_nome varchar(100)  NULL,
+    emp_porte varchar(10)  NULL,
+    emp_tipo varchar(10)  NULL,
+    emp_situacao varchar(10)  NULL,
+    emp_data_abertura varchar(10)  NULL,
+    emp_email varchar(80)  NULL,
+    emp_telefone varchar(20)  NULL,
+    emp_natureza varchar(50)  NULL,
     CONSTRAINT pk_empresa PRIMARY KEY  (emp_cnpj)
 );
 
 CREATE TABLE Dim_Produto (
-    prd_id int  IDENTITY(1, 1),
-    prd_codigo int  NOT NULL,
+    prd_id int IDENTITY(1, 1),
+    prd_codigo int  NULL,
     CONSTRAINT pk_produto PRIMARY KEY  (prd_id)
 );
 
 CREATE TABLE Dim_Tempo (
-    tmp_id int  IDENTITY(1, 1),
-    tmp_dia varchar(2)  NOT NULL,
-    tmp_mes varchar(2)  NOT NULL,
-    tmp_ano varchar(4)  NOT NULL,
+    tmp_id int IDENTITY(1, 1),
+    tmp_dia varchar(2)  NULL,
+    tmp_mes varchar(2)  NULL,
+    tmp_ano varchar(4)  NULL,
     CONSTRAINT pk_tempo PRIMARY KEY  (tmp_id)
 );
 
 CREATE TABLE Fato_Consumo (
-    Dim_Cidade_cid_id int  NOT NULL,
-    Dim_Cnae_cne_id int  NOT NULL,
-    Dim_Empresa_emp_cnpj varchar(30)  NOT NULL,
-    Dim_Tempo_tmp_id int  NOT NULL,
-    Dim_Produto_prd_id int  NOT NULL,
+    Dim_Cidade_cid_id int,
+    Dim_Cnae_cne_id int,
+    Dim_Empresa_emp_cnpj varchar(30),
+    Dim_Tempo_tmp_id int,
+    Dim_Produto_prd_id int,
     consumo int  NOT NULL,
     CONSTRAINT Fato_Consumo_pk PRIMARY KEY  (Dim_Cidade_cid_id,Dim_Cnae_cne_id,Dim_Empresa_emp_cnpj,Dim_Tempo_tmp_id,Dim_Produto_prd_id)
 );
