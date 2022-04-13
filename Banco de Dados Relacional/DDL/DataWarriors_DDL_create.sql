@@ -64,7 +64,7 @@ CREATE TABLE Usuario (
     usu_nome varchar(80)  NOT NULL,
     usu_senha varchar(30)  NOT NULL,
     usu_departamento varchar(80)  NULL,
-    car_id int  NOT NULL,
+    car_id int  NULL,
     crt_id int  NULL,
     CONSTRAINT pk_usuario_email PRIMARY KEY  (usu_email)
 );
