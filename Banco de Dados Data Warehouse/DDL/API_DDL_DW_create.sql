@@ -1,5 +1,6 @@
 CREATE TABLE Dim_Cidade (
     cid_id int IDENTITY(1, 1),
+    cid_id_origem int NULL,
     cid_nome varchar(50)  NULL,
     cid_estado varchar(2)  NULL,
     cid_regiao varchar(10)  NULL,
@@ -8,23 +9,29 @@ CREATE TABLE Dim_Cidade (
 
 CREATE TABLE Dim_Cnae (
     cne_id int IDENTITY(1, 1),
+    cne_id_origem int NULL,
     cne_cod varchar(10)  NULL,
     cne_descricao varchar(150)  NULL,
     CONSTRAINT pk_cnae PRIMARY KEY  (cne_id)
 );
 
 CREATE TABLE Dim_Empresa (
-    emp_cnpj varchar(30),
-    emp_origem varchar(15)  NULL,
-    emp_nome varchar(100)  NULL,
-    emp_porte varchar(10)  NULL,
-    emp_tipo varchar(10)  NULL,
-    emp_situacao varchar(10)  NULL,
-    emp_data_abertura varchar(10)  NULL,
-    emp_email varchar(80)  NULL,
-    emp_telefone varchar(20)  NULL,
-    emp_natureza varchar(50)  NULL,
-    CONSTRAINT pk_empresa PRIMARY KEY  (emp_cnpj)
+    emp_id int IDENTITY(1, 1),
+    emp_id_origem int NULL,
+    emp_cnpj varchar(30) NULL,
+    emp_origem varchar(15) NULL,
+    emp_nome varchar(100) NULL,
+    emp_porte varchar(10) NULL,
+    emp_tipo varchar(10) NULL,
+    emp_situacao varchar(10) NULL,
+    emp_data_abertura varchar(10) NULL,
+    emp_email varchar(80) NULL,
+    emp_telefone varchar(20) NULL,
+    emp_natureza varchar(50) NULL,
+    emp_vendedor varchar(80) NULL,
+    emp_nivel_carteira varchar(5) NULL,
+
+    CONSTRAINT pk_empresa PRIMARY KEY  (emp_id)
 );
 
 CREATE TABLE Dim_Produto (
