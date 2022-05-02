@@ -51,11 +51,11 @@ CREATE TABLE Dim_Tempo (
 CREATE TABLE Fato_Consumo (
     Dim_Cidade_cid_id int,
     Dim_Cnae_cne_id int,
-    Dim_Empresa_emp_cnpj varchar(30),
+    Dim_Empresa_emp_id int,
     Dim_Tempo_tmp_id int,
     Dim_Produto_prd_id int,
     consumo int  NOT NULL,
-    CONSTRAINT Fato_Consumo_pk PRIMARY KEY  (Dim_Cidade_cid_id,Dim_Cnae_cne_id,Dim_Empresa_emp_cnpj,Dim_Tempo_tmp_id,Dim_Produto_prd_id)
+    CONSTRAINT Fato_Consumo_pk PRIMARY KEY  (Dim_Cidade_cid_id,Dim_Cnae_cne_id,Dim_Empresa_emp_id,Dim_Tempo_tmp_id,Dim_Produto_prd_id)
 );
 
 ALTER TABLE Fato_Consumo ADD CONSTRAINT fk_cidade_consumo_cid_id
@@ -66,9 +66,9 @@ ALTER TABLE Fato_Consumo ADD CONSTRAINT fk_cnae_consumo_cnae_id
     FOREIGN KEY (Dim_Cnae_cne_id)
     REFERENCES Dim_Cnae (cne_id);
 
-ALTER TABLE Fato_Consumo ADD CONSTRAINT fk_empresa_consumo_emp_cnpj
-    FOREIGN KEY (Dim_Empresa_emp_cnpj)
-    REFERENCES Dim_Empresa (emp_cnpj);
+ALTER TABLE Fato_Consumo ADD CONSTRAINT fk_empresa_consumo_emp_id
+    FOREIGN KEY (Dim_Empresa_emp_id)
+    REFERENCES Dim_Empresa (emp_id);
 
 ALTER TABLE Fato_Consumo ADD CONSTRAINT fk_produto_consumo_prd_id
     FOREIGN KEY (Dim_Produto_prd_id)
