@@ -45,35 +45,34 @@ CREATE TABLE Dim_Tempo (
     CONSTRAINT pk_tempo PRIMARY KEY  (tmp_id)
 );
 
-CREATE TABLE Fato_Consumo (
+CREATE TABLE FatoConsumo (
     Dim_Cidade_cid_id int,
     Dim_Cnae_cne_id int,
     Dim_Tempo_tmp_id int,
     Dim_Produto_prd_id int,
     Dim_Empresa_emp_id int,
-    consumo int,
-    CONSTRAINT Fato_Consumo_pk PRIMARY KEY  (Dim_Cidade_cid_id,Dim_Cnae_cne_id,Dim_Tempo_tmp_id,Dim_Produto_prd_id,Dim_Empresa_emp_id)
+    consumo int  NOT NULL,
+    CONSTRAINT FatoConsumo_pk PRIMARY KEY  (Dim_Cidade_cid_id,Dim_Cnae_cne_id,Dim_Tempo_tmp_id,Dim_Produto_prd_id,Dim_Empresa_emp_id)
 );
 
-ALTER TABLE Fato_Consumo ADD CONSTRAINT fk_cidade_consumo_cid_id
+ALTER TABLE FatoConsumo ADD CONSTRAINT fk_cidade_consumo_cid_id
     FOREIGN KEY (Dim_Cidade_cid_id)
     REFERENCES Dim_Cidade (cid_id);
 
-ALTER TABLE Fato_Consumo ADD CONSTRAINT fk_cnae_consumo_cnae_id
+ALTER TABLE FatoConsumo ADD CONSTRAINT fk_cnae_consumo_cnae_id
     FOREIGN KEY (Dim_Cnae_cne_id)
     REFERENCES Dim_Cnae (cne_id);
 
-ALTER TABLE Fato_Consumo ADD CONSTRAINT fk_empresa_id_emp_id
+ALTER TABLE FatoConsumo ADD CONSTRAINT fk_empresa_id_emp_id
     FOREIGN KEY (Dim_Empresa_emp_id)
     REFERENCES Dim_Empresa (emp_id);
 
-ALTER TABLE Fato_Consumo ADD CONSTRAINT fk_produto_consumo_prd_id
+ALTER TABLE FatoConsumo ADD CONSTRAINT fk_produto_consumo_prd_id
     FOREIGN KEY (Dim_Produto_prd_id)
     REFERENCES Dim_Produto (prd_id);
 
-ALTER TABLE Fato_Consumo ADD CONSTRAINT fk_tempo_consumo_tmp_id
+ALTER TABLE FatoConsumo ADD CONSTRAINT fk_tempo_consumo_tmp_id
     FOREIGN KEY (Dim_Tempo_tmp_id)
     REFERENCES Dim_Tempo (tmp_id);
-
 
 
