@@ -19,15 +19,17 @@ CREATE TABLE Dim_Empresa (
     emp_id int IDENTITY(1, 1),
     emp_id_origem  int,
     emp_cnpj varchar(30),
-    emp_origem varchar(15),
-    emp_nome varchar(100),
-    emp_porte varchar(10),
-    emp_tipo varchar(10),
-    emp_situacao varchar(10),
-    emp_data_abertura varchar(10),
+    emp_origem varchar(30),
+    emp_nome varchar(150),
+    emp_porte varchar(200),
+    emp_tipo varchar(50),
+    emp_situacao varchar(50),
+    emp_data_abertura varchar(50),
     emp_email varchar(80),
-    emp_telefone varchar(20),
-    emp_natureza varchar(50),
+    emp_telefone varchar(80),
+    emp_natureza varchar(100),
+    emp_nivel varchar(20),
+    emp_prospecao varchar(30),
     CONSTRAINT pk_empresa PRIMARY KEY  (emp_id)
 );
 
@@ -49,10 +51,9 @@ CREATE TABLE Fato_Consumo (
     Dim_Tempo_tmp_id int,
     Dim_Produto_prd_id int,
     Dim_Empresa_emp_id int,
-    consumo int  NOT NULL,
+    consumo int,
     CONSTRAINT Fato_Consumo_pk PRIMARY KEY  (Dim_Cidade_cid_id,Dim_Cnae_cne_id,Dim_Tempo_tmp_id,Dim_Produto_prd_id,Dim_Empresa_emp_id)
 );
-
 
 ALTER TABLE Fato_Consumo ADD CONSTRAINT fk_cidade_consumo_cid_id
     FOREIGN KEY (Dim_Cidade_cid_id)
