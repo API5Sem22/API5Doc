@@ -1,9 +1,9 @@
 CREATE TABLE Dim_Cidade (
     cid_id int IDENTITY(1, 1),
     cid_id_origem int,
-    cid_nome varchar(50),
+    cid_nome varchar(100),
     cid_estado varchar(2),
-    cid_regiao varchar(10),
+    cid_regiao varchar(50),
     CONSTRAINT pk_cidade PRIMARY KEY  (cid_id)
 );
 
@@ -16,8 +16,7 @@ CREATE TABLE Dim_Cnae (
 );
 
 CREATE TABLE Dim_Empresa (
-    emp_id int IDENTITY(1, 1),
-    emp_id_origem  int,
+    emp_id int,
     emp_cnpj varchar(30),
     emp_origem varchar(30),
     emp_nome varchar(150),
@@ -44,9 +43,9 @@ CREATE TABLE FatoConsumo (
     Dim_Cnae_cne_id int,
     Dim_Produto_prd_id int,
     Dim_Empresa_emp_id int,
+    mes_referencia varchar(100),
     consumo int  NOT NULL,
-    mes_referencia varchar(100)  NOT NULL,
-    CONSTRAINT FatoConsumo_pk PRIMARY KEY  (Dim_Cidade_cid_id,Dim_Cnae_cne_id,Dim_Produto_prd_id,Dim_Empresa_emp_id)
+    CONSTRAINT FatoConsumo_pk PRIMARY KEY  (Dim_Cidade_cid_id,Dim_Cnae_cne_id,Dim_Produto_prd_id,Dim_Empresa_emp_id,mes_referencia)
 );
 
 ALTER TABLE FatoConsumo ADD CONSTRAINT fk_cidade_consumo_cid_id
@@ -64,5 +63,4 @@ ALTER TABLE FatoConsumo ADD CONSTRAINT fk_empresa_id_emp_id
 ALTER TABLE FatoConsumo ADD CONSTRAINT fk_produto_consumo_prd_id
     FOREIGN KEY (Dim_Produto_prd_id)
     REFERENCES Dim_Produto (prd_id);
-
 
