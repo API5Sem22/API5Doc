@@ -38,7 +38,7 @@
       ```
       </details>
 
-   * integration-test - Realiza os testes integrados do projeto utilizando Selenium, que testam a aplicação como um todo (Fron-end e Back-end), rodando apenas na branch develop.
+   * integration-test - Realiza os testes integrados do projeto utilizando Selenium, que testam a aplicação como um todo (Front-end e Back-end), rodando apenas na branch develop.
       <details>
       <summary>Job Testes Integrados</summary>
    
