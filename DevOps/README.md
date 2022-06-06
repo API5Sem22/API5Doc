@@ -110,6 +110,6 @@
 <p align="center"> <img src="https://github.com/guiftavares/Registro-de-Livros/blob/main/Group%2040linha.png"></p>
  
 <h2 style="font-family:roboto;"> Documentação de rotas</h2>
-<p align="justify" style="font-family:roboto;"> A documentação das rotas fornecidades pelo back-ed foi realizada pela ferramenta <a href="https://swagger.io/">Swagger</a>.</p>
+<p align="justify" style="font-family:roboto;"> A documentação das rotas fornecidades pelo back-end foi realizada pela ferramenta <a href="https://swagger.io/">Swagger</a>.</p>
  
  <html>
