@@ -14,7 +14,6 @@
  <a href="#-backlog-do-produto">Backlog</a> •
  <a href="#-layout">Layout</a> • 
  <a href="#-acesso-ao-projeto">Acesso ao projeto</a> • 
- <a href="#-vídeos-demonstração">Vídeos Demonstração</a> • 
  <a href="#-tecnologias">Tecnologias</a>
  </p>
  
@@ -97,18 +96,6 @@
     <p>Utilize o seguinte link: https://datawarriorsweb.herokuapp.com/</p>
     <p>O front-end do projeto pode ser acessado <a href="https://github.com/API5Sem22/API5Front">clicando aqui</a>.</p>
     <p>O back-end do projeto pode ser acessado por <a href="https://github.com/API5Sem22/API5Back">este link</a>.</p>
-  
-  <p align="center"> <img src="https://github.com/guiftavares/Registro-de-Livros/blob/main/Group%2040linha.png"></p>
-    
-<h2 style="font-family:roboto;"> Vídeos Demonstração</h2>
-<p align="center">Demonstração da tela de Gestão de Usuários</p>
-
-<div align="center">
-
-<img src="./Videos/dw-gestao-usuarios.gif">
-
-</div>
-
   
   <p align="center"> <img src="https://github.com/guiftavares/Registro-de-Livros/blob/main/Group%2040linha.png"></p>
   
