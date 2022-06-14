@@ -14,6 +14,7 @@
  <a href="#-backlog-do-produto">Backlog</a> •
  <a href="#-layout">Layout</a> • 
  <a href="#-acesso-ao-projeto">Acesso ao projeto</a> • 
+ <a href="#-vídeos-demonstração">Vídeos Demonstração</a> • 
  <a href="#-tecnologias">Tecnologias</a>
  </p>
  
@@ -96,6 +97,78 @@
     <p>Utilize o seguinte link: https://datawarriorsweb.herokuapp.com/</p>
     <p>O front-end do projeto pode ser acessado <a href="https://github.com/API5Sem22/API5Front">clicando aqui</a>.</p>
     <p>O back-end do projeto pode ser acessado por <a href="https://github.com/API5Sem22/API5Back">este link</a>.</p>
+    
+    
+<p align="center"> <img src="https://github.com/guiftavares/Registro-de-Livros/blob/main/Group%2040linha.png"></p>
+ 
+<h2 style="font-family:roboto;"> Vídeos Demonstração</h2>
+    
+<p align="center">Gestão de Usuários</p>
+
+<div align="center">
+
+![Alt Text](./Videos/gerenciar-usuarios.gif)
+
+</div>
+<br>
+    
+<p align="center">Editar Carteira</p>
+
+<div align="center">
+
+![Alt Text](./Videos/alterar-carteira.gif)
+
+</div>
+
+<br>
+
+<p align="center">Gráficos Vendedor</p>
+
+<div align="center">
+
+![Alt Text](./Videos/graficos-vendedor.gif)
+
+</div>
+    
+<br>
+    
+<p align="center">Atribuição de Empresas Livres</p>
+
+<div align="center">
+
+![Alt Text](./Videos/atribuicao-cliente.gif)
+
+</div>
+    
+<br>
+    
+<p align="center">Edição por CNPJ</p>
+
+<div align="center">
+
+![Alt Text](./Videos/edicao-por-cnpj.gif)
+
+</div>
+    
+<br>
+    
+<p align="center">Gráfico para Analista de Negócios</p>
+
+<div align="center">
+
+![Alt Text](./Videos/grafico-analista.gif)
+
+</div>
+    
+<br>
+    
+<p align="center">Tela Prospecção</p>
+
+<div align="center">
+
+![Alt Text](./Videos/grafico-prospeccao.gif)
+
+</div>
   
   <p align="center"> <img src="https://github.com/guiftavares/Registro-de-Livros/blob/main/Group%2040linha.png"></p>
   
