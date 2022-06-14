@@ -14,7 +14,6 @@
  <a href="#-backlog-do-produto">Backlog</a> •
  <a href="#-layout">Layout</a> • 
  <a href="#-acesso-ao-projeto">Acesso ao projeto</a> • 
- <a href="#-resultado-final">Resultado Final</a> • 
  <a href="#-tecnologias">Tecnologias</a>
  </p>
  
