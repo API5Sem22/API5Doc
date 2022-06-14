@@ -100,17 +100,15 @@
   
   <p align="center"> <img src="https://github.com/guiftavares/Registro-de-Livros/blob/main/Group%2040linha.png"></p>
     
-    
-   <h2 style="font-family:roboto;"> Vídeos Demonstração</h2>
-    
-<p align="center">Gestão de Usuários</p>
+<h2 style="font-family:roboto;"> Vídeos Demonstração</h2>
+<p align="center">Demonstração da tela de Gestão de Usuários</p>
 
 <div align="center">
 
-![Alt Text](./Videos/dw-gestao-usuarios.gif)
+<img src="./Videos/dw-gestao-usuarios.gif">
 
 </div>
-    
+
   
   <p align="center"> <img src="https://github.com/guiftavares/Registro-de-Livros/blob/main/Group%2040linha.png"></p>
   
