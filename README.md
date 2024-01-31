@@ -33,7 +33,7 @@
   <tr>
     <td align="center"><a href="https://www.linkedin.com/in/ramon-fernandes-19244a1ab/"><img style="border-radius: 50%;" src="https://github.com/GabrielSG20/API4Sem2021/blob/documentation/images/RamonFernandes.jfif" width="100px;" alt=""/><br /><sub><b>Ramon Fernandes</b></sub></a><br/><sub><b>Desenvolvedor</b></sub></td>
     <td align="center"><a href="https://www.linkedin.com/in/gabriel-henrique-de-souza-ferraz-4873581b2/"><img style="border-radius: 50%;" src="https://github.com/GabrielSG20/API4Sem2021/blob/documentation/images/GabrielFerraz.jfif" width="100px;" alt=""/><br /><sub><b>Gabriel Ferraz</b></sub></a><br/><sub><b>Desenvolvedor</b></sub></td>
-   <td align="center"><a href="https://www.linkedin.com/in/devgilbertosantos/"><img style="border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C4E03AQFVtgN9AJEN4Q/profile-displayphoto-shrink_800_800/0/1630589654324?e=1655942400&v=beta&t=wpQZCyve33P5Tmuy35gP1SD83oLieAKLJQWR0AqMKEw" width="100px;" alt=""/><br /><sub><b>Gilberto Santos Jr</b></sub></a><br/><sub><b>Desenvolvedor</b></sub></td>    
+   <td align="center"><a href="https://www.linkedin.com/in/devgilbertosantos/"><img style="border-radius: 50%;" src="https://github.com/API5Sem22/API5Doc/blob/main/images/Gilberto.jpeg" width="100px;" alt=""/><br /><sub><b>Gilberto Santos Jr</b></sub></a><br/><sub><b>Desenvolvedor</b></sub></td>    
   </tr>
 </table>
     
